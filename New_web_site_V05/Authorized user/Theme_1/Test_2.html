@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Онлайн платформа StarDust</title>
+			<link href="../Base_style_and_script/Test_style.css" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" href="../Base_style_and_script/fonts.css">
+			<link href="../Base_style_and_script/Header_and_flooter_style.css" rel="stylesheet" type="text/css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			<script src="../Base_style_and_script/Header_and_flooter_script.js"></script>
+			<script src="../Base_style_and_script/Test_script.js"></script>
+			<script src="../hamb/Basic.js"></script>
+		</head>
+		<body>
+			<div class="page">
+				<header class="header">
+					<div class="container">
+						<div class="header__body">
+							<div class="header__logo">
+								<img src="../Image/IMG_20221213_233900_761.jpg" alt="ALT">
+							</div>
+							<div class="header__burger">
+								<span></span>
+							</div>
+							<nav class="header__menu">
+								<ul class="header__list">
+									<li>
+										<a href="../hamb/Basic.html" class="header__link">
+											<span></span>
+											<span></span>
+											<span></span>
+											<span></span>
+											Главная страница</a>
+									</li>
+									<li>
+										<a href="../My_course/Choose_lesson_them_1.html" class="header__link">
+											<span></span>
+											<span></span>
+											<span></span>
+											<span></span>
+											Курс</a>
+									</li>
+									<li>
+										<a href="../About_us/About_us.html" class="header__link">
+											<span></span>
+											<span></span>
+											<span></span>
+											<span></span>
+											О нас</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+			<div class="content">
+				<h1>Тест по теме: <span class="countdown" style="display: none; font-size: 23pt; color: #CAC9C9; top: 220px; left: 80%; position: absolute;"></span></br>"Конфигурация планет"</h1>
+				<div class="strt" style="width: 60%; padding: 0px 20% 0px 20%;">
+					<p>Молодец! Ты прошёл урок №2, и для того, чтобы проверить твои знания, пройди тест по этому уроку.</p>
+					<p>В нём будет 10 вопросов, и на него у тебя есть 15 минут так, что будет внимательным и поглядывай за временем!</p>
+					<p>Если ты сомневаешься, то можешь перейти обратно к уроку и повторить материал.</p>
+					<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+						<tr>
+							<td>
+								<a href="Lesson_2.html"><button class="early_w" id="early0">⮌ Перейти обратно</button></a>
+							</td>
+							<td>
+								<button class="next" id="next0">Тест 🡢</button>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<section class="main">
+					<form name="quiz" action="javascript:check();" class="quizform">
+						<div class="quizsection1" style="display: none;">
+							<h2>Вопрос №1</h2>
+							<p>Какие планеты относятся к верхнему типу?</p>
+							<div class="answer">
+								<input name="q1" value="value1" id="value1" type="radio" /> Меркурий и Уран
+							</div>
+							<div class="answer">
+								<input name="q1" value="value1" id="value2" type="radio" /> Марс, Нептун, Сатурн
+							</div>
+							<div class="answer">
+								<input name="q1" value="value2" id="value3" type="radio" /> Марс, Юпитер, Сатурн, Уран и Нептун 
+							</div>
+							<div class="answer">
+								<input name="q1" value="value1" id="value4" type="radio" /> другое 
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q1" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td></td>
+									<td>
+										<button class="next" id="next1">🡢</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="quizsection2" style="display: none;">
+							<h2>Вопрос №2</h2>
+							<p>Какие планеты относятся к нижнему типу?</p>
+							<div class="answer">
+								<input name="q2" value="value1" id="value1" type="radio" /> Юпитер, Сатурн, Марс и Нептун
+							</div>
+							<div class="answer">
+								<input name="q2" value="value2" id="value2" type="radio" /> Меркурий и Венера
+							</div>
+							<div class="answer">
+								<input name="q2" value="value1" id="value3" type="radio" /> Земля и Марс
+							</div>
+							<div class="answer">
+								<input name="q2" value="value1" id="value4" type="radio" /> другое
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q2" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td>
+										<button class="early" id="early2">🡠</button>
+									</td>
+									<td>
+										<button class="next" id="next2">🡢</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="quizsection3" style="display: none;">
+							<h2>Вопрос №3</h2>
+							<p>Элонгацией планет называют?</p>
+							<div class="answer">
+								<input name="q3" value="value1" id="value1" type="radio" /> Положение планет, при котором для земного наблюдателя её угловое расстояние от Солнца минимально
+							</div>
+							<div class="answer">
+								<input name="q3" value="value2" id="value2" type="radio" /> Положение планет, при котором для земного наблюдателя её угловое расстояние от Солнца максимально
+							</div>
+							<div class="answer">
+								<input name="q3" value="value1" id="value3" type="radio" /> другое
+							</div>
+							<div class="answer">
+								<input name="q3" value="value1" id="value4" type="radio" /> Расстояние от Солнца до Земли
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q3" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td>
+										<button class="early" id="early3">🡠</button>
+									</td>
+									<td>
+										<button class="next" id="next3">🡢</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="quizsection4" style="display: none;">
+							<h2>Вопрос №4</h2>
+							<p>Когда можно наблюдать западную элонгацию?</p>
+							<div class="answer">
+								<input name="q4" value="value2" id="value1" type="radio" /> Утром
+							</div>
+							<div class="answer">
+								<input name="q4" value="value1" id="value2" type="radio" /> Днем
+							</div>
+							<div class="answer">
+								<input name="q4" value="value1" id="value3" type="radio" /> Вечером
+							</div>
+							<div class="answer">
+								<input name="q4" value="value1" id="value4" type="radio" /> Ночью
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q4" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td>
+										<button class="early" id="early4">🡠</button>
+									</td>
+									<td>
+										<button class="next" id="next4">🡢</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="quizsection5" style="display: none;">
+							<h2>Вопрос №5</h2>	
+							<p>Синодическим периодом называют?</p>
+							<div class="answer">
+								<input name="q5" value="value1" id="value1" type="radio" /> Периодом обращения вокруг Солнца 
+							</div>
+							<div class="answer">
+								<input name="q5" value="value1" id="value2" type="radio" /> Промежуток времени, по истечении которого планета для наблюдателя с Земли возвращается в прежнее положение относительно Солнца
+							</div>
+							<div class="answer">
+								<input name="q5" value="value2" id="value3" type="radio" /> Смещение всех планет в одну линию
+							</div>
+							<div class="answer">
+								<input name="q5" value="value1" id="value4" type="radio" /> другое
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q5" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td>
+										<button class="early" id="early5">🡠</button>
+									</td>
+									<td>
+										<button class="next" id="next5">🡢</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="quizsection6" style="display: none;">
+							<h2>Вопрос №6</h2>	
+							<p>Расстояние от Земли до Солнца в км?</p>
+							<div class="answer">
+								<input name="q6" value="value1" id="value1" type="radio" /> 80.000км 
+							</div>
+							<div class="answer">
+								<input name="q6" value="value2" id="value2" type="radio" /> 150млн. км 
+							</div>
+							<div class="answer">
+								<input name="q6" value="value1" id="value3" type="radio" /> 360.000км
+							</div>
+							<div class="answer">
+								<input name="q6" value="value1" id="value4" type="radio" /> 98млн. км
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q6" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td>
+										<button class="early" id="early6">🡠</button>
+									</td>
+									<td>
+										<button class="next" id="next6">🡢</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="quizsection7" style="display: none;">
+							<h2>Вопрос №7</h2>	
+							<p>Примерная скорость света считается?</p>
+							<div class="answer">
+								<input name="q7" value="value1" id="value1" type="radio" /> 200 метров в секунду
+							</div>
+							<div class="answer">
+								<input name="q7" value="value1" id="value2" type="radio" /> 8 парсеков в секунду
+							</div>
+							<div class="answer">
+								<input name="q7" value="value2" id="value3" type="radio" /> 300.000 километров в секунду
+							</div>
+							<div class="answer">
+								<input name="q7" value="value1" id="value4" type="radio" /> 40.000 километров в час
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q7" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td>
+										<button class="early" id="early7">🡠</button>
+									</td>
+									<td>
+										<button class="next" id="next7">🡢</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="quizsection8" style="display: none;">
+							<h2>Вопрос №8</h2>
+							<p>Какой способ измерения расстояний до планет проще и удобнее в наше время?</p>
+							<div class="answer">
+								<input name="q8" value="value1" id="value1" type="radio" /> Горизонтальный параллакс
+							</div>
+							<div class="answer">
+								<input name="q8" value="value2" id="value2" type="radio" /> Космическая радиолокация
+							</div>
+							<div class="answer">
+								<input name="q8" value="value1" id="value3" type="radio" /> Ждать лунного затмения
+							</div>
+							<div class="answer">
+								<input name="q8" value="value1" id="value4" type="radio" /> другое
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q8" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td>
+										<button class="early" id="early8">🡠</button>
+									</td>
+									<td>
+										<button class="next" id="next8">🡢</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="quizsection9" style="display: none;">
+							<h2>Вопрос №9</h2>
+							<p>При помощи какого способа узнали расстояние от Земли до Солнца?</p>
+							<div class="answer">
+								<input name="q9" value="value2" id="value1" type="radio" /> Космическая радиолокация
+							</div>
+							<div class="answer">
+								<input name="q9" value="value1" id="value2" type="radio" /> другое
+							</div>
+							<div class="answer">
+								<input name="q9" value="value1" id="value3" type="radio" /> Наблюдения за объектами
+							</div>
+							<div class="answer">
+								<input name="q9" value="value1" id="value4" type="radio" /> Горизонтальный параллакс
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q9" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td>
+										<button class="early" id="early9">🡠</button>
+									</td>
+									<td>
+										<button class="next" id="next9">🡢</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="quizsection10" style="display: none;">
+							<h2>Вопрос №10</h2>	
+							<p>Как Кеплер развил теорию Коперника?</p>
+							<div class="answer">
+								<input name="q10" value="value2" id="value1" type="radio" /> Предложил, что планеты движутся по эллиптическим орбитам
+							</div>
+							<div class="answer">
+								<input name="q10" value="value1" id="value2" type="radio" /> Предложил, что планеты движутся по круговым орбитам
+							</div>
+							<div class="answer">
+								<input name="q10" value="value1" id="value3" type="radio" /> Предложил, что планеты движутся по волнообразно
+							</div>
+							<div class="answer">
+								<input name="q10" value="value1" id="value4" type="radio" /> Предложил, что планеты неподвижны
+							</div>
+							<div class="answer" style="display: none;">
+								<input name="q10" value="value1" id="value5" type="radio" checked="checked"/>
+							</div>
+							<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+								<tr>
+									<td>
+										<button class="early" id="early10">🡠</button>
+									</td>
+									<td>
+										<button class="early_w" id="next10">Завершить тест ✓</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</form>
+				</section>
+				<script type="text/javascript">// <![CDATA[
+					  var result;				   
+					   function check()
+					   {
+						  var question;
+						  var value1;
+						  var value2;				  
+						  
+						  question = 1;
+						  value1 = 0;
+						  value2 = 0;				  
+						  
+						  result = "";
+						  var choice;				  
+						  for (question = 1; question <= 10; question++) {					  
+							 var q = document.forms['quiz'].elements['q'+question];
+								for (var i = 0; i < q.length; i++) {
+								   if (q[i].checked) {
+									  choice = q[i].value;
+								   }
+								}
+
+								if (choice == "value1") {
+								   value1++;
+								}
+
+								if (choice == "value2") {
+								   value2++;
+								}
+
+							 }
+
+						  if (value2 <= 4) {
+							 // 2
+							 result = "Нет повода переживать, ошибка - ступень на пути к достижению цели!";
+						  }
+						  else if (value2 >= 5 && value2 <=7) {
+							 // 3-4
+							 result = "Быть посередине лучше, чем в конце, ты молодец!";
+						  }
+
+						  else if (value2 >= 8 && value2 <= 10) {
+							 // 5
+							 result = "Комментарии излишни, ты превзошел сам себя!";
+						  }
+
+						  else {
+							 result = "404";
+						  }
+						  document.getElementById("result").innerHTML = value2
+						  document.getElementById("resul").innerHTML = result
+					   }
+				// ]]></script>
+				<div class="res" style="display: none; text-align: center; width: 60%; padding: 0px 20% 0px 20%;">
+					<p id="resul"></p>
+					Ваш результат: <span id="result"></span>/10
+					<table class="buttonnextorearly" style="margin-left: -20%; width: 140%; margin-top: 40px;">
+							<tr>
+								<td>
+									<a href="Test_2.html"><button class="early" id="early11">⮌ Пройти тест</button></a>
+								</td>
+								<td>
+									<a href="Lesson_3.html"><button class="early_w" id="next11">Следующий урок🡢</button></a>
+								</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class="footer">
+				<h2>StarDust</h2>
+				<p>Контакты: platformaStarDust@yandex.ru</p>
+			</div>
+		</body>
+	</html>

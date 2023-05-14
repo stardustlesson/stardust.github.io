@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			
+			<!-- Название страницы -->
+			<title>Онлайн платформа StarDust</title>
+			
+			<!-- Подключение CSS Файла -->
+			<link href="Basic.css" rel="stylesheet" type="text/css">
+			
+			<link href="../Base_style_and_script/loader.css" rel="stylesheet" type="text/css">
+			<!-- Подключение шрифтов -->
+			<link href="fonts.css" rel="stylesheet" type="text/css">
+			
+						<!-- Подключение Jquery -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+			
+			<meta name="viewport" content="width=device-width">
+
+			<!-- Подключение JS файла -->
+			<script src="Basic.js"></script>
+			<!-- Стили для прелоудера-->
+			<style>
+				.preloader {
+					position: fixed;
+					background: black;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					z-index: 99999;
+				}
+				.preloader > div {
+					position: relative;
+					left: 50%;
+					top: 50vh;
+					margin: -200px 0 0 -200px;
+				}
+			</style>
+		</head>
+		<!-- Начало кода -->
+		<body>
+		<!-- Прелоудер -->
+			<div class="preloader">
+				<div>
+					<img src="../Image/animation.gif" alt="ALT">
+				</div>
+			</div>
+			<!-- Задний фон -->
+			<div id="background">
+				<img src="../../../images/outerspace-60.gif" class="stretch" alt="" />
+		</div>
+		<!-- Шапка страницы -->
+			<div class="page">
+			<header class="header">
+				<div class="container_d">
+					<div class="header__body">
+						<div class="header__logo">
+							<img src="../Image/IMG_20221213_233900_761.jpg" alt="ALT">
+						</div>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li>
+									<a href="../hamb/Basic.html" class="header__link">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										Главная страница</a>
+								</li>
+								<li>
+									<a href="../My_course/Choose_lesson_them_1.html" class="header__link">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										Курс</a>
+								</li>
+								<li>
+									<a href="../About_us/About_us.html" class="header__link">
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										О нас</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<!-- НАчало контента -->
+	<div class="content">
+		<div class="container">
+			<div class="content__text">
+				<p>
+					На этом сайте вы сможете познакомиться с новым для Вас<br> предствалением о космосе и об Вселенной здесь! <br>
+						Вы узнаете про физику и астрономию много интересного<br> и еще наглядно увидете все на видео для понимания. <br>
+						У нас есть курс "Представление о строении мира" в который <br>входят темы: "Предстваления о Вселенной","Конфигурация планет", <br>
+						"Закон всемирного тяготения" и финальный урок с поздравлением! <br> 	После каждого урока вы можете пройти тест, чтобы проверить свои знания. <br>На обычный тест уходит 15мин, а на финальный около 30-45мин <br>
+						на проверку знаний знаний материала. Вопросы составлины <br>
+						строго по самому материалу видео-уроков! <br>Готовы ли пройти этот курс с нами?!
+				</p>
+				<p>
+					Нажмите на хлебные крошки в правом верхнем углу "☰" <br>или нажмите на слово "Курс", чтобы перейти сразу к курсу.
+				</p>
+			</div>
+			<!-- Видео Трейлер -->
+			<div class="box">
+				<form>
+				<video class="videocontrol" src="../Video/stardust.mp4" controls poster="../../../images/previu.png"></video>
+			</form>
+			</div>
+			<!-- Картинка астронафта -->
+			<img class="naft" src="../Image/naft.png" alt="ALT">
+		</div>
+	</div>
+</div>
+<!-- Нижняя шапка сайта -->
+<div class="footer">
+	<h1>StarDust</h1>
+	<p>Контакты: platformaStarDust@yandex.ru</p>
+</div>
+<!-- Скрипт для прелоудера на Jquery -->
+<script>	$(window).on('load', function(){
+	$('.preloader').delay(1000).fadeOut('slow');
+});</script>
+		</body>
+	</html>

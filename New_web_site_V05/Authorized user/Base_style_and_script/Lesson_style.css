@@ -1,0 +1,169 @@
+body {
+	background-color: #693099;
+	color: #fff;
+}
+
+.content {
+	.content {
+		margin: 100px 8% 20px 8%;
+		width: 80%;
+		font-family: 'gotham_bold';
+		padding: 5px 2% 20px 2%;
+		border-radius: 30px;
+		border: 2px solid rgb(255, 255, 255, .5);
+		backdrop-filter: blur(20px);
+	}
+}
+
+h1 {
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 40px;
+	margin-top: 0px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-bottom: 0px;
+	font-family: 'gotham_bold';
+}
+
+video {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.ep {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: -5px;
+	background-color: #693099;
+}
+
+.ep td {
+	width: 25%;
+}
+
+.ep button {
+	border: none; 
+	background-color: #693099; 
+	height: 30px;
+	width: 100%;
+	color: #fff; 
+	cursor: pointer; 
+	font-size: 20px;
+	font-family: 'gotham_light';
+	transition: 1.7s;
+}
+.lesson {
+	backdrop-filter: blur(20px);
+}
+.ep button:hover {
+	background-color: #9B63CC;
+	transition: 1.7s;
+}
+
+.test {
+	border: none; 
+	background-color: #693099; 
+	height: 60px;
+	width: 25%;
+	margin-left: 75%;
+	color: #fff; 
+	cursor: pointer; 
+	font-size: 20px;
+	border-radius: 20px;
+	transition: 1.7s;
+	font-family: 'gotham_bold';
+}
+
+.content .test:hover {
+	background-color: #693070; 
+	width: 30%;
+	margin-left: 70%;
+	transition: 1.7s;
+}
+
+.space_height {
+	height: 60px;
+	display: none;
+}
+
+.about_lesson {
+	margin-left: 5%;
+	font-family: 'gotham_light';
+}
+
+.text h3 {
+	padding-top: 110px;
+	margin: 0px;
+	margin-top: -90px;
+}
+
+.text p {
+	font-family: 'gotham_light';
+}
+
+.all_text {
+	border: none; 
+	background-color: #693099; 
+	width: 20%;
+	color: #fff;
+	margin-top: 20px;
+	height: 60px;
+	border-radius: 10px;
+	cursor: pointer; 
+	font-size: 20px;
+	font-family: 'gotham_bold';
+	transition: 1.7s;
+}
+
+.content .all_text:hover {
+	background-color: #693070; 
+	width: 45%;
+	transition: 1.7s;
+}
+
+.thems a:link {
+	color: #fff;
+}
+
+.thems a:visited {
+	color: #fff;
+}
+
+.item_center {
+	text-align: center;
+}
+
+.item_center img {
+	height: 300px;
+}
+
+.lesson {
+	display: none;
+}
+@media (max-width:767px){
+	h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.ep {
+	padding: 10px;
+	}
+	.img1 {
+		height: 1px;
+		width: 20%;
+	}
+	.item_center img {
+		height: 200px;
+		width: 90%;
+	}
+}

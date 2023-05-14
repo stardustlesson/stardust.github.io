@@ -1,0 +1,447 @@
+body {
+	background: url(../../../images/outerspace-60.gif);
+	color: #fff;
+}
+p {
+	color: #fff;
+}
+.content {
+	margin: 100px 8% 20px 8%;
+	width: 80%;
+	font-family: 'gotham_bold';
+	background-color: #fff;
+	padding: 5px 2% 20px 2%;
+	background: transparent;
+	border: 2px solid rgb(255, 255, 255, .5);
+	border-radius: 30px;
+	backdrop-filter: blur(15px);
+}
+
+h1 {
+	text-align: center;
+	font-size: 35px;
+	font-family: 'gotham_bold';
+	margin-bottom: 0px;
+}
+
+progress {
+    width: 90%;
+    height: 30px;
+    color: #3fb6b2;
+    background: rgb(255, 255, 255, 0);
+	border: 2px solid #CAC9C9;
+	border-radius: 15px;
+}
+
+progress::-webkit-progress-bar {
+    background: rgb(255, 255, 255, 0);
+	border-radius: 15px;
+}
+
+progress::-webkit-progress-value {
+    background: #693099;
+	border-radius: 15px;
+} 
+
+progress::-moz-progress-bar {
+    color: #3fb6b2;
+    background: #efefef;
+	border-radius: 15px;
+}
+
+.list {
+	border: none; 
+	background-color: rgb(255, 255, 255, 0); 
+	font-size: 16pt;
+	cursor: pointer; 
+	margin-top: 20px;
+	width: 100%;
+	padding: 20px 0px 20px 0px;
+	text-align: left;
+    transition: 0.7s;
+	border-bottom: 4px solid rgb(255, 255, 255, 0);
+	font-family: 'gotham_bold';
+}
+
+#list {
+	border: none; 
+	background-color: rgb(255, 255, 255, 0); 
+	font-size: 16pt; 
+	margin-top: 20px;
+	width: 100%;
+	padding: 20px 0px 20px 0px;
+	text-align: left;
+	font-family: 'gotham_bold';
+}
+
+.list:hover {
+     background: purple;
+     transition: 0.7s; 
+}
+
+.list table {
+	padding-left: 5%;
+	width: 100%;
+	font-family: 'gotham_bold';
+}
+
+#list table {
+	padding-left: 5%;
+	width: 100%;
+	font-family: 'gotham_bold';
+}
+/* !!! Начало основных стилей !!! */
+
+/* Отключение отступа */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#background {
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	left: 0px; 
+	top: 0px; 
+	z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+	width:100%;
+	height:100%;
+}
+
+/* Вся страница */
+.page {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+body {
+	background:;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-family: 'gotham_light';
+	font-size: 14px;
+}
+.header__link {
+	color:#03e9f4;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	padding: 25px 30px;
+	overflow: hidden;
+}
+.header__link:hover {
+	background-color: #03e9f4;
+	color: black;
+	box-shadow: 0 0 5px #03e9f4,
+	0 0 25px #03e9f4, 
+	0 0 50px #03e9f4,
+	0 0 200px #03e9f4;
+	-webkit-box-reflect: below 1px linear-gardient(transparent, #0005);
+}
+.header__link:first-child {
+	filter: hue-rotate(224deg);
+}
+.header__link:last-child {
+	filter: hue-rotate(90deg);
+}
+.header__link span {
+	position: absolute;
+	display: block;
+}
+.header__link span:nth-child(1) {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: linear-gradient(90deg, transparent, #03e9f4);
+	animation: animateon1 1s infinite;
+}
+@keyframes animateon1 {
+0% {
+	lef: -100%;
+}
+100% {
+	left: 100%;
+}
+}
+
+.header__link span:nth-child(2) {
+	top: -100%;
+	right: 0;
+	width: 1px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #03e9f4);
+	animation: animateon2 1s infinite;
+	animation-delay: .25s;
+}
+@keyframes animateon2 {
+	0% {
+		top: -100%;
+	}
+	100% {
+		top: 100%;
+	}
+	}
+	.header__link span:nth-child(3) {
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 1px;
+		background: linear-gradient(270deg, transparent, #03e9f4);
+		animation: animateon3 1s infinite;
+		animation-delay: .5s;
+	}
+	@keyframes animateon3 {
+		0% {
+			right: -100%;
+		}
+		100% {
+			right: 100%;
+		}
+		}
+
+		.header__link span:nth-child(4) {
+			bottom: -100%;
+			left: 0;
+			width: 1px;
+			height: 100%;
+			background: linear-gradient(360deg, transparent, #03e9f4);
+			animation: animateon4 1s infinite;
+			animation-delay: .75s;
+		}
+		@keyframes animateon4 {
+			0% {
+				bottom: -100%;
+			}
+			100% {
+				bottom: 100%;
+			}
+			}
+
+.footer {
+	background-color: rgb(192, 5, 248, .3);
+	color: #fff;
+	padding: 30px;
+	font-family: 'gotham_bold';
+	animation: animatedBg 5s linear infinite;
+
+}
+.footer {
+	margin-top: auto;
+	background-color: rgb(192, 5, 248, .3)
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50	;
+	animation: animatedBg 5s linear infinite;
+	background-color: rgb(192, 5, 248, .3)
+	
+}
+.header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(192, 5, 248, .3)
+	z-index: 3;
+}
+.container {
+	max-width: 1180px;
+	margin: 0px auto;
+	padding:0px 10px;
+}
+.header__body {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+}
+.header__list li {
+	list-style: none;
+	margin: 0px 0px 0px 20px;
+}
+.header__list {
+	display: flex;
+	position: relative;
+	z-index: 3	;
+}
+.header__link {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-decoration: none;
+}
+	.header__logo {
+		flex: 0 0 60px;
+		border-radius: 50%;
+		overflow: hidden;
+		z-index: 3;
+	}
+	.header__logo img{
+		max-width: 100%;
+		display: block;
+	}
+	.content__text {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.content__text p {
+		margin: 0px 0px 20px 0px;
+		color: #fff;
+	}
+	.content {
+		padding: 100px 0px 0px 0px;
+	}
+	.content {
+		margin: 100px 8% 20px 8%;
+		width: 80%;
+		font-family: 'gotham_bold';
+		padding: 5px 2% 100px 2%;
+		border-radius: 30px;
+		border: 2px solid rgb(255, 255, 255, .5);
+		backdrop-filter: blur(15px);
+	}
+	.naft {
+		height: 500px;
+		right: -10;
+		display: flex;
+		margin-left:700px;
+		margin-top: -350px;
+	}
+	.button {
+		position: fixed;
+		margin-top: -150px;
+		cursor: pointer;
+		height: 240px;
+		}
+		.chelovek {
+			z-index: -1;
+			margin-left: -1350px;
+		}
+		.textglav {
+			margin-top: -300px;
+		}
+		.but_buttontext {
+			border: 3px solid rgba(173, 173, 173, 0.973);
+			margin-left: -10px;
+		}
+	@media (max-width:767px){
+		#background {
+			width: 0%; 
+			height: 0%; 
+			position: fixed; 
+			left: 0px; 
+			top: 0px; 
+			z-index: -1;
+		}
+		.header__body {
+			height: 50px;
+			
+		}
+		.header__logo {
+			flex: 0 0 40px;
+		}
+		.header__burger {
+			position: relative;
+			width: 30px;
+			height: 20px;
+			z-index: 3;
+		}
+		.header__burger:before,
+		.header__burger:after{
+			content: '';
+			background-color: #fff;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: all 0.3s ease 0s;	
+		}
+		.header__burger:before{
+			top: 0;
+		}
+		.header__burger:after{
+			bottom: 0;
+		}
+		.header__burger span{
+			position: absolute;
+			background-color: #fff;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			top: 9px;
+			transition: all 0.3s ease 0s;
+		}
+		.header__menu {
+			position: fixed;
+			top: -120%;
+			left: 0;
+			overflow: auto;
+			width: 100%;
+			height: 100%;
+			background-color: rgb(99, 21, 130,.8);
+			padding: 70px 10px 20px 10px;
+			transition: all 0.8s ease 0s;
+		}
+		.header__menu.active {
+			top: 0;
+			transition: all 0.8s ease 0s;	
+		}
+		.header__list {
+			display: block;
+		}
+		.header__list li {
+			margin: 0px 0px 20px 0px;
+		}
+		.header__burger.active:before {
+			transform:rotate(45deg);
+		 top: 9px;
+	 }
+	 .header__burger.active:after {
+		 transform:rotate(-45deg);
+		 bottom: 9px;
+	}
+	.header__burger.active span {
+		transform: scale(0);
+	}
+	.content {
+		padding: 70px 0px 0px 0px;
+	}
+	body.lock {
+		overflow: hidden;
+	}
+	.header__link {
+		color: #fff;
+	}
+	.button {
+		position: fixed;
+		margin-top: -130px;
+		cursor: pointer;
+		height: 180px;
+		margin-left: -15px;
+		}
+		.content {
+			margin: 100px 8% 20px 8%;
+			width: 80%;
+			font-family: 'gotham_bold';
+			padding: 10px 10px 100px 10px;
+			border-radius: 30px;
+			border: 2px solid rgb(255, 255, 255, .5);
+			backdrop-filter: blur(15px);
+		}
+	}
+	
